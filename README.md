@@ -30,6 +30,13 @@ Add the following script into this file:
     
     # Set the project in gcloud config
     gcloud_original config set project "$PROJECT_ID"
+    
+    # Pass through all other gcloud arguments
+    gcloud_original "$@"
+
+Make the script executable:
+
+    sudo chmod +x /usr/local/bin/gcloud
 
 ## 2nd way Solution
 
@@ -40,13 +47,3 @@ Add the following script into this file:
     benefits:
 
     Every time you open the terminal, it will automatically display which project your terminal has access to.
-    
-
-     
-    
-    # Pass through all other gcloud arguments
-    gcloud_original "$@"
-
-Make the script executable:
-
-    sudo chmod +x /usr/local/bin/gcloud
