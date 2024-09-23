@@ -30,6 +30,19 @@ Add the following script into this file:
     
     # Set the project in gcloud config
     gcloud_original config set project "$PROJECT_ID"
+
+## 2nd way Solution
+
+    Add this into the ~/.bashrc.
+
+    cat ~/.config/gcloud/configurations/config_default
+
+    benefits:
+
+    Every time you open the terminal, it will automatically display which project your terminal has access to.
+    
+
+     
     
     # Pass through all other gcloud arguments
     gcloud_original "$@"
